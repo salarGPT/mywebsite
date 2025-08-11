@@ -3,54 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple Website</title>
+    <title>A simple Website that I made with the help of ChatGPT!</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
         }
-        nav {
-            background-color: #333;
+        header {
+            background-color: #007BFF;
+            color: white;
             padding: 1rem;
         }
         nav ul {
             list-style: none;
             display: flex;
+            justify-content: center;
             gap: 1rem;
-            margin: 0;
             padding: 0;
+            margin: 0;
         }
-        nav ul li {
-            display: inline;
-        }
-        nav ul li a {
+        nav a {
             color: white;
             text-decoration: none;
+            font-weight: bold;
         }
-        nav ul li a:hover {
+        nav a:hover {
             text-decoration: underline;
         }
         main {
-            text-align: center;
             padding: 2rem;
+        }
+        button {
+            padding: 0.5rem 1rem;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
 
-    <nav>
-        <ul>
-            <li><a href="https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/index.html">Home</a></li>
-            <li><a href="https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/shop.html">Shop</a></li>
-        </ul>
-    </nav>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
-        <h1>Welcome to My Website</h1>
-        <p>Click the shop tab to see our products.</p>
+        <h2>Hello, World! 🌍</h2>
+        <p>This is my first HTML page. Pretty good looking, right?</p>
+        <button onclick="alert('Surprise!')">Click Me</button>
     </main>
+
+    <footer>
+        <p>© 2025 My Simple Website</p>
+    </footer>
 
 </body>
 </html>
